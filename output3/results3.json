@@ -1,0 +1,559 @@
+{
+ "dataset": {
+  "rows": 12000,
+  "cols": 22,
+  "missing_cells": 0,
+  "date_min": "2025-01-01",
+  "date_max": "2025-12-31"
+ },
+ "describe": {
+  "volume_units": {
+   "mean": 341.82,
+   "median": 259.0,
+   "std": 276.95,
+   "min": 20.0,
+   "max": 1800.0,
+   "skew": 2.1
+  },
+  "distance_km": {
+   "mean": 40.49,
+   "median": 34.6,
+   "std": 26.08,
+   "min": 4.0,
+   "max": 135.3,
+   "skew": 0.83
+  },
+  "loading_wait_min": {
+   "mean": 21.68,
+   "median": 20.3,
+   "std": 10.22,
+   "min": 5.0,
+   "max": 92.6,
+   "skew": 0.84
+  },
+  "transit_hrs": {
+   "mean": 1.59,
+   "median": 1.35,
+   "std": 1.08,
+   "min": 0.15,
+   "max": 8.13,
+   "skew": 1.1
+  },
+  "delivery_hrs": {
+   "mean": 2.37,
+   "median": 2.12,
+   "std": 1.11,
+   "min": 0.66,
+   "max": 9.04,
+   "skew": 1.06
+  },
+  "transport_cost": {
+   "mean": 1269.69,
+   "median": 1134.0,
+   "std": 592.39,
+   "min": 413.0,
+   "max": 5236.0,
+   "skew": 1.5
+  },
+  "cost_per_unit": {
+   "mean": 5.49,
+   "median": 4.28,
+   "std": 4.48,
+   "min": 0.87,
+   "max": 83.91,
+   "skew": 4.14
+  },
+  "rating": {
+   "mean": 4.0,
+   "median": 4.0,
+   "std": 0.86,
+   "min": 1.0,
+   "max": 5.0,
+   "skew": -0.39
+  }
+ },
+ "mode_vehicle": "Van",
+ "share_vehicle": {
+  "Van": 51.6,
+  "Mini-truck": 38.2,
+  "Truck": 10.2
+ },
+ "share_region": {
+  "Central": 30.2,
+  "East": 21.9,
+  "North": 18.1,
+  "South": 16.8,
+  "West": 13.0
+ },
+ "otd_pct": 57.8,
+ "late_pct": 42.2,
+ "damage_pct": 2.02,
+ "avg_rating": 4.0,
+ "rating_late_vs_ontime": {
+  "0": 4.54,
+  "1": 3.25
+ },
+ "corr": {
+  "volume_units": {
+   "volume_units": 1.0,
+   "distance_km": -0.01,
+   "loading_wait_min": -0.02,
+   "transit_hrs": 0.06,
+   "delivery_hrs": 0.11,
+   "transport_cost": 0.57,
+   "cost_per_unit": -0.49,
+   "driver_exp_yrs": -0.02,
+   "is_late": 0.26
+  },
+  "distance_km": {
+   "volume_units": -0.01,
+   "distance_km": 1.0,
+   "loading_wait_min": -0.01,
+   "transit_hrs": 0.95,
+   "delivery_hrs": 0.92,
+   "transport_cost": 0.75,
+   "cost_per_unit": 0.45,
+   "driver_exp_yrs": 0.0,
+   "is_late": 0.27
+  },
+  "loading_wait_min": {
+   "volume_units": -0.02,
+   "distance_km": -0.01,
+   "loading_wait_min": 1.0,
+   "transit_hrs": 0.02,
+   "delivery_hrs": 0.17,
+   "transport_cost": 0.02,
+   "cost_per_unit": 0.02,
+   "driver_exp_yrs": 0.01,
+   "is_late": 0.44
+  },
+  "transit_hrs": {
+   "volume_units": 0.06,
+   "distance_km": 0.95,
+   "loading_wait_min": 0.02,
+   "transit_hrs": 1.0,
+   "delivery_hrs": 0.98,
+   "transport_cost": 0.78,
+   "cost_per_unit": 0.4,
+   "driver_exp_yrs": -0.05,
+   "is_late": 0.42
+  },
+  "delivery_hrs": {
+   "volume_units": 0.11,
+   "distance_km": 0.92,
+   "loading_wait_min": 0.17,
+   "transit_hrs": 0.98,
+   "delivery_hrs": 1.0,
+   "transport_cost": 0.8,
+   "cost_per_unit": 0.36,
+   "driver_exp_yrs": -0.05,
+   "is_late": 0.51
+  },
+  "transport_cost": {
+   "volume_units": 0.57,
+   "distance_km": 0.75,
+   "loading_wait_min": 0.02,
+   "transit_hrs": 0.78,
+   "delivery_hrs": 0.8,
+   "transport_cost": 1.0,
+   "cost_per_unit": 0.04,
+   "driver_exp_yrs": -0.09,
+   "is_late": 0.41
+  },
+  "cost_per_unit": {
+   "volume_units": -0.49,
+   "distance_km": 0.45,
+   "loading_wait_min": 0.02,
+   "transit_hrs": 0.4,
+   "delivery_hrs": 0.36,
+   "transport_cost": 0.04,
+   "cost_per_unit": 1.0,
+   "driver_exp_yrs": -0.03,
+   "is_late": 0.02
+  },
+  "driver_exp_yrs": {
+   "volume_units": -0.02,
+   "distance_km": 0.0,
+   "loading_wait_min": 0.01,
+   "transit_hrs": -0.05,
+   "delivery_hrs": -0.05,
+   "transport_cost": -0.09,
+   "cost_per_unit": -0.03,
+   "driver_exp_yrs": 1.0,
+   "is_late": -0.1
+  },
+  "is_late": {
+   "volume_units": 0.26,
+   "distance_km": 0.27,
+   "loading_wait_min": 0.44,
+   "transit_hrs": 0.42,
+   "delivery_hrs": 0.51,
+   "transport_cost": 0.41,
+   "cost_per_unit": 0.02,
+   "driver_exp_yrs": -0.1,
+   "is_late": 1.0
+  }
+ },
+ "by_region": {
+  "Central": {
+   "shipments": 3621,
+   "avg_dist": 14.04,
+   "avg_hrs": 1.33,
+   "late_pct": 25.16,
+   "cpu": 3.46,
+   "avg_cost": 819.17
+  },
+  "East": {
+   "shipments": 2628,
+   "avg_dist": 29.77,
+   "avg_hrs": 1.95,
+   "late_pct": 38.85,
+   "cpu": 4.7,
+   "avg_cost": 1085.63
+  },
+  "North": {
+   "shipments": 2172,
+   "avg_dist": 45.97,
+   "avg_hrs": 2.58,
+   "late_pct": 48.53,
+   "cpu": 5.92,
+   "avg_cost": 1363.91
+  },
+  "South": {
+   "shipments": 2013,
+   "avg_dist": 61.97,
+   "avg_hrs": 3.22,
+   "late_pct": 55.89,
+   "cpu": 7.05,
+   "avg_cost": 1639.94
+  },
+  "West": {
+   "shipments": 1566,
+   "avg_dist": 84.44,
+   "avg_hrs": 4.1,
+   "late_pct": 61.11,
+   "cpu": 8.92,
+   "avg_cost": 2013.68
+  }
+ },
+ "by_vehicle": {
+  "Mini-truck": {
+   "shipments": 4583,
+   "avg_vol": 422.03,
+   "avg_cost": 1397.59,
+   "cpu": 4.09,
+   "late_pct": 47.44
+  },
+  "Truck": {
+   "shipments": 1229,
+   "avg_vol": 892.55,
+   "avg_cost": 2074.43,
+   "cpu": 2.74,
+   "late_pct": 74.29
+  },
+  "Van": {
+   "shipments": 6188,
+   "avg_vol": 173.03,
+   "avg_cost": 1015.14,
+   "cpu": 7.08,
+   "late_pct": 32.01
+  }
+ },
+ "by_weather": {
+  "Clear": {
+   "shipments": 9824,
+   "avg_hrs": 2.29,
+   "late_pct": 35.97,
+   "cpu": 5.41
+  },
+  "Fog": {
+   "shipments": 228,
+   "avg_hrs": 2.57,
+   "late_pct": 58.33,
+   "cpu": 5.45
+  },
+  "Rain": {
+   "shipments": 1948,
+   "avg_hrs": 2.74,
+   "late_pct": 71.92,
+   "cpu": 5.92
+  }
+ },
+ "by_month": {
+  "1": {
+   "shipments": 994,
+   "volume": 336775,
+   "late_pct": 42.76,
+   "cpu": 5.56
+  },
+  "2": {
+   "shipments": 912,
+   "volume": 323244,
+   "late_pct": 40.35,
+   "cpu": 5.21
+  },
+  "3": {
+   "shipments": 983,
+   "volume": 328890,
+   "late_pct": 39.37,
+   "cpu": 5.52
+  },
+  "4": {
+   "shipments": 1001,
+   "volume": 348819,
+   "late_pct": 38.96,
+   "cpu": 5.3
+  },
+  "5": {
+   "shipments": 1005,
+   "volume": 333724,
+   "late_pct": 38.01,
+   "cpu": 5.39
+  },
+  "6": {
+   "shipments": 929,
+   "volume": 313175,
+   "late_pct": 50.05,
+   "cpu": 5.64
+  },
+  "7": {
+   "shipments": 922,
+   "volume": 308964,
+   "late_pct": 46.2,
+   "cpu": 5.62
+  },
+  "8": {
+   "shipments": 943,
+   "volume": 321379,
+   "late_pct": 44.43,
+   "cpu": 5.52
+  },
+  "9": {
+   "shipments": 957,
+   "volume": 323791,
+   "late_pct": 43.68,
+   "cpu": 5.62
+  },
+  "10": {
+   "shipments": 1231,
+   "volume": 429113,
+   "late_pct": 43.62,
+   "cpu": 5.46
+  },
+  "11": {
+   "shipments": 1146,
+   "volume": 387303,
+   "late_pct": 42.67,
+   "cpu": 5.82
+  },
+  "12": {
+   "shipments": 977,
+   "volume": 346620,
+   "late_pct": 37.05,
+   "cpu": 5.2
+  }
+ },
+ "by_hour": {
+  "6": {
+   "shipments": 245,
+   "wait": 13.15,
+   "late_pct": 19.18
+  },
+  "7": {
+   "shipments": 645,
+   "wait": 17.0,
+   "late_pct": 24.96
+  },
+  "8": {
+   "shipments": 1807,
+   "wait": 27.29,
+   "late_pct": 64.03
+  },
+  "9": {
+   "shipments": 2040,
+   "wait": 29.41,
+   "late_pct": 68.24
+  },
+  "10": {
+   "shipments": 1582,
+   "wait": 25.4,
+   "late_pct": 41.78
+  },
+  "11": {
+   "shipments": 751,
+   "wait": 17.19,
+   "late_pct": 25.43
+  },
+  "12": {
+   "shipments": 527,
+   "wait": 15.77,
+   "late_pct": 25.05
+  },
+  "13": {
+   "shipments": 510,
+   "wait": 15.48,
+   "late_pct": 25.29
+  },
+  "14": {
+   "shipments": 891,
+   "wait": 19.15,
+   "late_pct": 29.63
+  },
+  "15": {
+   "shipments": 972,
+   "wait": 19.34,
+   "late_pct": 30.45
+  },
+  "16": {
+   "shipments": 770,
+   "wait": 17.58,
+   "late_pct": 24.55
+  },
+  "17": {
+   "shipments": 497,
+   "wait": 15.41,
+   "late_pct": 44.27
+  },
+  "18": {
+   "shipments": 378,
+   "wait": 14.41,
+   "late_pct": 39.42
+  },
+  "19": {
+   "shipments": 257,
+   "wait": 13.18,
+   "late_pct": 19.46
+  },
+  "20": {
+   "shipments": 128,
+   "wait": 11.43,
+   "late_pct": 23.44
+  }
+ },
+ "by_weekday": {
+  "0": {
+   "shipments": 2143,
+   "wait": 22.95,
+   "late_pct": 44.52
+  },
+  "1": {
+   "shipments": 1889,
+   "wait": 21.98,
+   "late_pct": 42.83
+  },
+  "2": {
+   "shipments": 1907,
+   "wait": 22.15,
+   "late_pct": 43.94
+  },
+  "3": {
+   "shipments": 1793,
+   "wait": 21.37,
+   "late_pct": 41.44
+  },
+  "4": {
+   "shipments": 1867,
+   "wait": 21.66,
+   "late_pct": 41.83
+  },
+  "5": {
+   "shipments": 1874,
+   "wait": 21.78,
+   "late_pct": 41.25
+  },
+  "6": {
+   "shipments": 527,
+   "wait": 14.56,
+   "late_pct": 32.26
+  }
+ },
+ "by_experience": {
+  "0-2": {
+   "late_pct": 48.4,
+   "cpu": 5.73,
+   "hrs": 2.42
+  },
+  "3-5": {
+   "late_pct": 46.84,
+   "cpu": 5.57,
+   "hrs": 2.46
+  },
+  "6-9": {
+   "late_pct": 42.35,
+   "cpu": 5.51,
+   "hrs": 2.36
+  },
+  "10-15": {
+   "late_pct": 36.84,
+   "cpu": 5.32,
+   "hrs": 2.3
+  }
+ },
+ "outliers_iqr_delivery_hrs": 183,
+ "peak": {
+  "share_shipments_pct": 45.2,
+  "wait_peak": 27.5,
+  "wait_offpeak": 16.8,
+  "late_peak": 59.1,
+  "late_offpeak": 28.3
+ },
+ "time_breakdown": {
+  "Central": {
+   "wait_hrs": 0.36,
+   "transit_hrs": 0.55,
+   "unload_hrs": 0.42
+  },
+  "East": {
+   "wait_hrs": 0.36,
+   "transit_hrs": 1.17,
+   "unload_hrs": 0.42
+  },
+  "North": {
+   "wait_hrs": 0.36,
+   "transit_hrs": 1.8,
+   "unload_hrs": 0.41
+  },
+  "South": {
+   "wait_hrs": 0.37,
+   "transit_hrs": 2.44,
+   "unload_hrs": 0.42
+  },
+  "West": {
+   "wait_hrs": 0.36,
+   "transit_hrs": 3.33,
+   "unload_hrs": 0.41
+  }
+ },
+ "wait_share_of_total_pct": 15.3,
+ "scale_cpu_first_last": [
+  12.0,
+  1.98
+ ],
+ "cost_model": {
+  "r2": 0.932,
+  "std_coefs": {
+   "vehicle_Van": -99.2,
+   "driver_exp_yrs": -46.9,
+   "weather_Fog": -1.4,
+   "loading_wait_min": 19.4,
+   "weather_Rain": 38.0,
+   "vehicle_Truck": 95.6,
+   "volume_units": 216.5,
+   "distance_km": 445.5
+  }
+ },
+ "whatif": {
+  "late_before": 42.2,
+  "late_after": 34.0,
+  "avg_wait_before": 21.7,
+  "avg_wait_after": 17.6,
+  "annual_cost_saving_rs": 97858,
+  "cap_wait_min": 19.4
+ },
+ "rain_buffer_late_pct": {
+  "before": 42.2,
+  "after": 35.7,
+  "rain_late_before": 71.9,
+  "rain_late_after": 31.9
+ }
+}
